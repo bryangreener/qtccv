@@ -320,7 +320,6 @@ function wave.loadTrack(path)
 	track.height = readInt(2) -- song height
     print("track.height: " .. track.height)
 	track.name = readStr() -- song name
-    print("track.name: " .. track.name)
 	track.author = readStr() -- song author
 	track.originalAuthor = readStr() -- original song author
 	track.description = readStr() -- song description
@@ -335,7 +334,6 @@ function wave.loadTrack(path)
 	track.blocksAdded = readInt(4) -- blocks added
 	track.blocksRemoved = readInt(4) -- blocks removed
 	track.schematicFileName = readStr() -- midi/schematic file name
-    print("track.schematicFileName: " .. track.schematicFileName)
 
 	-- Part #2: Notes
 	track.layers = { }
