@@ -324,7 +324,6 @@ function wave.loadTrack(path)
 	track.originalAuthor = readStr() -- original song author
 	track.description = readStr() -- song description
 	track.tempo = readInt(2) / 100 -- tempo (ticks per second)
-    print("track.tempo: " .. track.tempo)
 	track.autoSaving = readInt(1) == 0 and true or false -- auto-saving
 	track.autoSavingDuration = readInt(1) -- auto-saving duration
 	track.timeSignature = readInt(1) -- time signature (3 = 3/4)
