@@ -296,6 +296,7 @@ function wave.loadTrack(path)
 		for i = 0, size - 1 do
 			local byte = handle.read()
 			if not byte then -- dont leave open file handles no matter what
+                print("readInt: Byte is NULL. Closing File.")
 				handle.close()
 				return
 			end
@@ -375,6 +376,7 @@ function wave.loadTrack(path)
 		track.layers[i].volume = readInt(1) / 100
 	end
 
+    print("End of function. Closing Handle")
 	handle.close()
 	return track
 end
