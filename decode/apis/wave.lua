@@ -316,23 +316,39 @@ function wave.loadTrack(path)
 
 	-- Part #1: Metadata
     print("Getting Metadata")
+    print("track.length = readInt(2) -- song length (ticks)")
 	track.length = readInt(2) -- song length (ticks)
     print("track.length: " .. track.length)
+    print("track.height = readInt(2) -- song height")
 	track.height = readInt(2) -- song height
-    print("track.height: " .. track.height)
+    print("track.height: " .. track.hei
+    print("track.name = readStr() -- song name")ght)
 	track.name = readStr() -- song name
+    print("track.author = readStr() -- song author")
 	track.author = readStr() -- song author
-	track.originalAuthor = readStr() -- original song author
+    print("track.originalAuthor = readStr() -- original song author")
+	track.originalAuthor = readStr() -- original song
+    print("track.description = readStr() -- song description") author
 	track.description = readStr() -- song description
+    print("track.tempo = readInt(2) / 100 -- tempo (ticks per second)")
 	track.tempo = readInt(2) / 100 -- tempo (ticks per second)
-	track.autoSaving = readInt(1) == 0 and true or false -- auto-saving
-	track.autoSavingDuration = readInt(1) -- auto-saving duration
-	track.timeSignature = readInt(1) -- time signature (3 = 3/4)
-	track.minutesSpent = readInt(4) -- minutes spent
+    print("track.autoSaving = readInt(1) == 0 and true or false -- auto-saving")
+	track.autoSaving = readInt(1) == 0 and true or false -- auto-
+    print("track.autoSavingDuration = readInt(1) -- auto-saving duration")saving
+	track.autoSavingDuration = readInt(1) -- auto-saving duratio
+    print("track.timeSignature = readInt(1) -- time signature (3 = 3/4)")n
+	track.timeSignature = readInt(1) -- time signatu
+    print("track.minutesSpent = readInt(4) -- minutes spent")re (3 = 3/4)
+	track.minutesSpent = readInt(4) -- minutes s
+    print("track.leftClicks = readInt(4) -- left clicks")pent
 	track.leftClicks = readInt(4) -- left clicks
+    print("track.rightClicks = readInt(4) -- right clicks")
 	track.rightClicks = readInt(4) -- right clicks
+    print("track.blocksAdded = readInt(4) -- blocks added")
 	track.blocksAdded = readInt(4) -- blocks added
+    print("track.blocksRemoved = readInt(4) -- blocks removed")
 	track.blocksRemoved = readInt(4) -- blocks removed
+    print("track.schematicFileName = readStr() -- midi/schematic file name")
 	track.schematicFileName = readStr() -- midi/schematic file name
 
 	-- Part #2: Notes
