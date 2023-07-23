@@ -322,29 +322,18 @@ function wave.loadTrack(path)
 	track.name = readStr() -- song name
     print("track.name: " .. track.name)
 	track.author = readStr() -- song author
-    print("track.author: " .. track.author)
 	track.originalAuthor = readStr() -- original song author
-    print("track.originalAuthor: " .. track.originalAuthor)
 	track.description = readStr() -- song description
-    print("track.description: " .. track.description)
 	track.tempo = readInt(2) / 100 -- tempo (ticks per second)
     print("track.tempo: " .. track.tempo)
 	track.autoSaving = readInt(1) == 0 and true or false -- auto-saving
-    print("track.autoSaving: " .. track.autoSaving)
 	track.autoSavingDuration = readInt(1) -- auto-saving duration
-    print("track.autoSavingDuration: " .. track.autoSavingDuration)
 	track.timeSignature = readInt(1) -- time signature (3 = 3/4)
-    print("track.timeSignature: " .. track.timeSignature)
 	track.minutesSpent = readInt(4) -- minutes spent
-    print("track.minutesSpent: " .. track.minutesSpent)
 	track.leftClicks = readInt(4) -- left clicks
-    print("track.leftClicks: " .. track.leftClicks)
 	track.rightClicks = readInt(4) -- right clicks
-    print("track.rightClicks: " .. track.rightClicks)
 	track.blocksAdded = readInt(4) -- blocks added
-    print("track.blocksAdded: " .. track.blocksAdded)
 	track.blocksRemoved = readInt(4) -- blocks removed
-    print("track.blocksRemoved: " .. track.blocksRemoved)
 	track.schematicFileName = readStr() -- midi/schematic file name
     print("track.schematicFileName: " .. track.schematicFileName)
 
