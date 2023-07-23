@@ -321,26 +321,26 @@ function wave.loadTrack(path)
     print("track.length: " .. track.length)
     print("track.height = readInt(2) -- song height")
 	track.height = readInt(2) -- song height
-    print("track.height: " .. track.hei
-    print("track.name = readStr() -- song name")ght)
+    print("track.height: " .. track.height)
+    print("track.name = readStr() -- song name")
 	track.name = readStr() -- song name
     print("track.author = readStr() -- song author")
 	track.author = readStr() -- song author
     print("track.originalAuthor = readStr() -- original song author")
-	track.originalAuthor = readStr() -- original song
-    print("track.description = readStr() -- song description") author
+	track.originalAuthor = readStr() -- original song author
+    print("track.description = readStr() -- song description")
 	track.description = readStr() -- song description
     print("track.tempo = readInt(2) / 100 -- tempo (ticks per second)")
 	track.tempo = readInt(2) / 100 -- tempo (ticks per second)
     print("track.autoSaving = readInt(1) == 0 and true or false -- auto-saving")
-	track.autoSaving = readInt(1) == 0 and true or false -- auto-
-    print("track.autoSavingDuration = readInt(1) -- auto-saving duration")saving
-	track.autoSavingDuration = readInt(1) -- auto-saving duratio
-    print("track.timeSignature = readInt(1) -- time signature (3 = 3/4)")n
-	track.timeSignature = readInt(1) -- time signatu
-    print("track.minutesSpent = readInt(4) -- minutes spent")re (3 = 3/4)
-	track.minutesSpent = readInt(4) -- minutes s
-    print("track.leftClicks = readInt(4) -- left clicks")pent
+	track.autoSaving = readInt(1) == 0 and true or false -- auto-saving
+    print("track.autoSavingDuration = readInt(1) -- auto-saving duration")
+	track.autoSavingDuration = readInt(1) -- auto-saving duration
+    print("track.timeSignature = readInt(1) -- time signature (3 = 3/4)")
+	track.timeSignature = readInt(1) -- time signature (3 = 3/4)
+    print("track.minutesSpent = readInt(4) -- minutes spent")
+	track.minutesSpent = readInt(4) -- minutes spent
+    print("track.leftClicks = readInt(4) -- left clicks")
 	track.leftClicks = readInt(4) -- left clicks
     print("track.rightClicks = readInt(4) -- right clicks")
 	track.rightClicks = readInt(4) -- right clicks
