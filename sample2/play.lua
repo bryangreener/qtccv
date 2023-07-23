@@ -15,7 +15,6 @@ if (not fs.exists("dueling_banjos.qtv")) then
 	getFile("decode/videoplayer.lua", "videoplayer.lua")
 	getFile("sample/dueling_banjos.nbs", "dueling_banjos.nbs")
 	getFile("sample/dueling_banjos.qtv", "dueling_banjos.qtv")
-	
 end
 
 shell.run("videoplayer", "dueling_banjos")
