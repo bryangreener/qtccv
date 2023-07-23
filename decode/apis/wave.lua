@@ -314,6 +314,7 @@ function wave.loadTrack(path)
 	end
 
 	-- Part #1: Metadata
+    print("Getting Metadata")
 	track.length = readInt(2) -- song length (ticks)
     print("track.length: " .. track.length)
 	track.height = readInt(2) -- song height
