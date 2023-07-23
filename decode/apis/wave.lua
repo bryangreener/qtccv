@@ -316,37 +316,36 @@ function wave.loadTrack(path)
 
 	-- Part #1: Metadata
     print("Getting Metadata")
-	print("track.length")
-    track.length = readInt(2) -- song length (ticks)
-	print("track.height")
-    track.height = readInt(2) -- song height
-	print("track.name")
+	track.length = readInt(2) -- song length (ticks)
+    print("track.length: " .. track.length)
+	track.height = readInt(2) -- song height
+    print("track.height: " .. track.height)
     track.name = readStr() -- song name
-	print("track.author")
+	print("HERE: author")
     track.author = readStr() -- song author
-	print("track.originalAuthor")
+	print("HERE: originalAuthor")
     track.originalAuthor = readStr() -- original song author
-	print("track.description")
+	print("HERE: description")
     track.description = readStr() -- song description
-	print("track.tempo")
+	print("HERE: tempo")
     track.tempo = readInt(2) / 100 -- tempo (ticks per second)
-	print("track.autoSaving")
+	print("HERE: autoSaving")
     track.autoSaving = readInt(1) == 0 and true or false -- auto-saving
-	print("track.autoSavingDuration")
+	print("HERE: autoSavingDuration")
     track.autoSavingDuration = readInt(1) -- auto-saving duration
-	print("track.timeSignature")
+	print("HERE: timeSignature")
     track.timeSignature = readInt(1) -- time signature (3 = 3/4)
-	print("track.minutesSpent")
+	print("HERE: minutesSpent")
     track.minutesSpent = readInt(4) -- minutes spent
-	print("track.leftClicks")
+	print("HERE: leftClicks")
     track.leftClicks = readInt(4) -- left clicks
-	print("track.rightClicks")
+	print("HERE: rightClicks")
     track.rightClicks = readInt(4) -- right clicks
-	print("track.blocksAdded")
+	print("HERE: blocksAdded")
     track.blocksAdded = readInt(4) -- blocks added
-	print("track.blocksRemoved")
+	print("HERE: blocksRemoved")
     track.blocksRemoved = readInt(4) -- blocks removed
-	print("track.schematicFileName")
+	print("HERE: schematicFileName")
     track.schematicFileName = readStr() -- midi/schematic file name
 
 	-- Part #2: Notes
